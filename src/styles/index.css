@@ -9,7 +9,7 @@ body {
 
 /* Hero principal */
 .inicio {
-  width: 100%;          /* no uses 100vw */
+  width: 100%;          
   min-height: 100vh;
   margin: 0;
   padding: 160px 0 80px;
