@@ -1,0 +1,90 @@
+/* Fuente general */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edeae8;
+  color: #506266;
+}
+
+/* Hero principal */
+.inicio {
+  width: 100%;          /* no uses 100vw */
+  min-height: 100vh;
+  margin: 0;
+  padding: 160px 0 80px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    #10454f 0%,
+    #506266 35%,
+    #818274 65%,
+    #a3ab78 85%
+  );
+  color: #edeae8;
+  box-sizing: border-box;
+}
+
+.inicio-content h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #edeae8;
+}
+
+.inicio-content p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #d6d6d6;
+}
+
+.btn-principal {
+  display: inline-block;
+  background-color: #bde038;
+  color: #10454f;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-principal:hover {
+  background-color: #a3ab78;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.iconos img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.iconos img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .inicio-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .iconos {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}

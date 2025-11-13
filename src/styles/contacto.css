@@ -1,0 +1,215 @@
+/* Página de Contacto */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #edeae8;
+  color: #506266;
+  
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* elimina scroll lateral */
+  background-color: #edeae8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.contacto {
+  width: 100%;          /* no uses 100vw */
+  min-height: 100vh;
+  margin: 0;
+  padding: 160px 0 80px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    #10454f 0%,
+    #506266 35%,
+    #818274 65%,
+    #a3ab78 85%
+  );
+  color: #edeae8;
+  box-sizing: border-box;
+}
+
+/* --- Testimonios --- */
+.testimonios {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonios h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #edeae8;
+  margin-bottom: 10px;
+}
+
+.testimonios p {
+  color: #dcdcdc;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.cards-testimonios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 40px;
+}
+
+.card-testimonio {
+  background-color: #506266;
+  border-radius: 12px;
+  max-width: 320px;
+  padding: 30px 20px;
+  color: #edeae8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card-testimonio:hover {
+  transform: translateY(-5px);
+  background-color: #818274;
+}
+
+.card-testimonio p {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #edeae8;
+}
+
+.autor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  background-color: #a3ab78;
+  color: #10454f;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autor h4 {
+  margin: 0;
+  font-weight: 600;
+  color: #bde038;
+}
+
+.autor span {
+  font-size: 0.85rem;
+  color: #edeae8;
+}
+
+/* --- Formulario de Contacto --- */
+.formulario-contacto {
+  text-align: center;
+  padding: 80px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.formulario-contacto h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #edeae8;
+  margin-bottom: 10px;
+}
+
+.formulario-contacto p {
+  color: #dcdcdc;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.formulario {
+  background-color: #10454f;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 40px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formulario label {
+  font-weight: 600;
+  color: #edeae8;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  background-color: #506266;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #edeae8;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: #c7c7c7;
+}
+
+.formulario textarea {
+  resize: none;
+  height: 120px;
+}
+
+.formulario button {
+  width: 100%;
+  background-color: #bde038;
+  color: #10454f;
+  font-weight: 600;
+  border: none;
+  padding: 14px 0;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.formulario button:hover {
+  background-color: #a3ab78;
+  transform: translateY(-2px);
+}
+
+/* Responsividad Contacto */
+@media (max-width: 768px) {
+  .formulario {
+    padding: 30px 25px;
+  }
+
+  .formulario-contacto h2 {
+    font-size: 1.8rem;
+  }
+}
