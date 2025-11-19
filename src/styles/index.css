@@ -9,21 +9,31 @@ body {
 
 /* Hero principal */
 .inicio {
-  width: 100%;          
-  min-height: 100vh;
+  width: 100%;
   margin: 0;
-  padding: 160px 0 80px;
+  padding: 120px 0 10px; /* ⬅ Reducimos padding inferior (antes 40px o más) */
   text-align: center;
   background: linear-gradient(
     180deg,
     #10454f 0%,
     #506266 35%,
     #818274 65%,
-    #a3ab78 85%
+    #a3ab78 90% /* ⬅ extendemos el gradiente para que llegue casi al carrusel */
   );
   color: #edeae8;
   box-sizing: border-box;
 }
+
+
+/* Empujar los iconos MÁS cerca del botón */
+
+
+@media (min-width: 768px) {
+  .inicio {
+    padding: 150px 0 60px;
+  }
+}
+
 
 .inicio-content h1 {
   font-size: 2.4rem;
@@ -42,8 +52,8 @@ body {
 
 .btn-principal {
   display: inline-block;
-  background-color: #bde038;
-  color: #10454f;
+  background-color: #506266;
+  color: #bde038;
   padding: 12px 28px;
   border-radius: 10px;
   font-weight: 600;
@@ -59,8 +69,10 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
+
+
 
 .iconos img {
   width: 60px;
@@ -86,5 +98,11 @@ body {
   .iconos {
     flex-wrap: wrap;
     gap: 25px;
+  }
+}
+/* Ajuste extra para evitar que el hero se vea demasiado grande en celulares */
+@media (max-width: 480px) {
+  .inicio {
+    padding: 130px 0 60px;
   }
 }

@@ -13,10 +13,13 @@ PROYECTO_CIENCIASN/
 │   │   ├── contacto.html
 │   │   ├── cursos.html
 │   │   ├── recursos.html
-│   │
+│   ├── scripts/
+│   │   ├── carrusel.js
 │   ├── styles/
+│   │   ├── carrusel.css
 │   │   ├── contacto.css
 │   │   ├── cursos.css
+│   │   ├── footer.css
 │   │   ├── index.css
 │   │   ├── navbar.css
 │   │   ├── recursos.css
