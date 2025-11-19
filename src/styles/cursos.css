@@ -2,10 +2,11 @@
 body {
   font-family: "Poppins", sans-serif;
   padding: 40px 0 0px;  /* balance perfecto */
-  margin-top: 0;
+  
   text-align: center;
+
   margin-bottom: 0;
-  background-color: #edeae8;
+  background-color: #10454f;
   color: #506266;
 }
 
@@ -16,7 +17,7 @@ html, body {
   height: 100%;
   box-sizing: border-box;
   overflow-x: hidden; /* elimina scroll lateral */
-  background-color: #edeae8;
+  background-color: #10454f;
 }
 
 *,
@@ -31,6 +32,8 @@ html, body {
   margin: 0;
   padding: 160px 0 80px;
   text-align: center;
+  background:#edeae8;
+  /*
   background: linear-gradient(
     180deg,
     #10454f 0%,
@@ -38,7 +41,8 @@ html, body {
     #818274 65%,
     #a3ab78 85%
   );
-  color: #edeae8;
+  */
+  color: #10454f;
   box-sizing: border-box;
 }
 
@@ -46,12 +50,12 @@ html, body {
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #edeae8;
+  color: #10454f;
 }
 
 .cursos-header p {
   font-size: 1rem;
-  color: #dcdcdc;
+  color: #10454f;
   margin-bottom: 60px;
 }
 

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" id="microscope">
+  <defs>
+    <linearGradient id="b" x1="34" x2="34" y1="55" y2="63" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7f7f99"></stop>
+      <stop offset="1" stop-color="#515072"></stop>
+    </linearGradient>
+    <linearGradient id="d" x1="15.52" x2="59" y1="35.7" y2="35.7" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bccbe2"></stop>
+      <stop offset="1" stop-color="#e4e9f4"></stop>
+    </linearGradient>
+    <linearGradient id="a" x1="7" x2="7" y1="17.341" y2="21.341" gradientTransform="matrix(1 0 0 -1 0 58.341)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6f98e7"></stop>
+      <stop offset="1" stop-color="#9ebff5"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="e" x1="16" x2="16" y1="25.341" y2="35.341"></linearGradient>
+    <linearGradient xlink:href="#a" id="f" x1="7" x2="7" y1="30.341" y2="40.341"></linearGradient>
+    <linearGradient xlink:href="#a" id="g" x1="16" x2="16" y1="44.341" y2="48.341"></linearGradient>
+    <linearGradient xlink:href="#a" id="h" x1="9" x2="9" y1="53.341" y2="57.341"></linearGradient>
+    <linearGradient xlink:href="#b" id="i" x1="20" x2="20" y1="45" y2="49"></linearGradient>
+    <linearGradient xlink:href="#b" id="j" x1="59" x2="59" y1="1" y2="9" gradientTransform="rotate(45 59 5)"></linearGradient>
+    <linearGradient id="c" x1="47.5" x2="47.5" y1="3" y2="29" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e4e9f4"></stop>
+      <stop offset="1" stop-color="#bccbe2"></stop>
+    </linearGradient>
+    <linearGradient xlink:href="#c" id="k" x1="32.5" x2="32.5" y1="26" y2="35" gradientTransform="rotate(45 32.5 30.5)"></linearGradient>
+    <linearGradient xlink:href="#b" id="l" x1="36" x2="36" y1="21" y2="33" gradientTransform="rotate(45 36 27)"></linearGradient>
+    <linearGradient xlink:href="#b" id="m" x1="51" x2="51" y1="15" y2="27"></linearGradient>
+    <linearGradient xlink:href="#c" id="n" x1="51" x2="51" y1="19" y2="23"></linearGradient>
+  </defs>
+  <path fill="url(#b)" d="M21,55H47a8,8,0,0,1,8,8v0a0,0,0,0,1,0,0H13a0,0,0,0,1,0,0v0A8,8,0,0,1,21,55Z"></path>
+  <path fill="#7f7f99" d="M30 34a1 1 0 0 1-.707-1.707l1-1a1 1 0 0 1 1.414 1.414l-1 1A1 1 0 0 1 30 34zM28 32a1 1 0 0 1-.707-1.707l1-1a1 1 0 0 1 1.414 1.414l-1 1A1 1 0 0 1 28 32zM32 36a1 1 0 0 1-.707-1.707l1-1a1 1 0 0 1 1.414 1.414l-1 1A1 1 0 0 1 32 36z"></path>
+  <path fill="url(#d)" d="M22.17,49A18.993,18.993,0,1,0,38.86,16.4l4.22-4A24,24,0,1,1,15.52,49Z"></path>
+  <circle cx="7" cy="39" r="2" fill="url(#a)"></circle>
+  <polygon fill="url(#e)" points="13 33 19 33 22 28 19 23 13 23 10 28 13 33"></polygon>
+  <polygon fill="url(#f)" points="4 28 10 28 13 23 10 18 4 18 1 23 4 28"></polygon>
+  <circle cx="16" cy="12" r="2" fill="url(#g)"></circle>
+  <circle cx="9" cy="3" r="2" fill="url(#h)"></circle>
+  <rect width="38" height="4" x="1" y="45" fill="url(#i)"></rect>
+  <rect width="5.657" height="5.657" x="56.172" y="2.172" fill="url(#j)" transform="rotate(-45 59 5)"></rect>
+  <polygon fill="url(#c)" points="53 3 61 11 42 29 34 21 53 3"></polygon>
+  <rect width="4.243" height="8.485" x="30.379" y="26.257" fill="url(#k)" transform="rotate(-45 32.5 30.5)"></rect>
+  <rect width="5.657" height="11.314" x="33.172" y="21.343" fill="url(#l)" transform="rotate(-45 36 27)"></rect>
+  <circle cx="51" cy="21" r="6" fill="url(#m)"></circle>
+  <circle cx="51" cy="21" r="2" fill="url(#n)"></circle>
+  <path fill="#50373b" d="M63.707,4.293l-4-4a1,1,0,0,0-1.414,0L55,3.586,53.707,2.293a1,1,0,0,0-1.394-.019l-19,18-.008.011-.012.008-4,4a1,1,0,0,0,0,1.414l.293.293-2.293,2.293a1,1,0,0,0,0,1.414l.293.293-.293.293a1,1,0,1,0,1.414,1.414L29,31.414l.586.586-.293.293a1,1,0,1,0,1.414,1.414L31,33.414l.586.586-.293.293a1,1,0,1,0,1.414,1.414L33,35.414l.293.293a1,1,0,0,0,1.414,0L37,33.414l.293.293a1,1,0,0,0,1.414,0l3.981-3.981,3.682-3.49A6.963,6.963,0,0,0,51,28c.181,0,.359-.014.537-.027A17.61,17.61,0,0,1,53,35,17.972,17.972,0,0,1,25.087,50H39a1,1,0,0,0,1-1V45a1,1,0,0,0-1-1H1a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1H15.026a24.938,24.938,0,0,0,4.018,4.22A9.013,9.013,0,0,0,12,63a1,1,0,0,0,1,1H55a1,1,0,0,0,1-1,8.873,8.873,0,0,0-5.595-8.3,24.856,24.856,0,0,0,9.241-15.531,1,1,0,0,0-1.972-.33A22.86,22.86,0,0,1,47.6,54.247a.946.946,0,0,0-.091.059A22.971,22.971,0,0,1,17.592,50h4.216A19.973,19.973,0,0,0,55,35a19.629,19.629,0,0,0-1.46-7.484,7,7,0,0,0,2.529-1.7,22.794,22.794,0,0,1,1.615,5.354,1,1,0,0,0,.985.833.96.96,0,0,0,.168-.014,1,1,0,0,0,.819-1.153,24.807,24.807,0,0,0-2.289-6.941,6.948,6.948,0,0,0-.885-7.232l5.206-4.934a1,1,0,0,0,.019-1.433L60.414,9l3.293-3.293A1,1,0,0,0,63.707,4.293ZM48.339,56.149A6.925,6.925,0,0,1,53.929,62H14.071A7.011,7.011,0,0,1,21,56h.474a24.947,24.947,0,0,0,26.865.149ZM2,46H38v2H2ZM34,33.586,29.414,29,31,27.414,35.586,32Zm4-2L31.414,25,34,22.414,40.586,29ZM51,26a5,5,0,1,1,5-5A5.006,5.006,0,0,1,51,26Zm4.026-10.717a6.988,6.988,0,0,0-9.952,9.426L42.019,27.6,35.434,21.02,52.981,4.4l6.585,6.585ZM59,7.586,56.414,5,59,2.414,61.586,5Z"></path>
+  <path fill="#50373b" d="M3.143 28.515A1 1 0 0 0 4 29H9.434l2.307 3.845L8.293 36.293l-.006.009A2.957 2.957 0 0 0 7 36a3 3 0 1 0 3 3 2.957 2.957 0 0 0-.3-1.287l.009-.006L13.414 34H19a1 1 0 0 0 .857-.485l3-5a1 1 0 0 0 0-1.03l-3-5A1 1 0 0 0 19 22H13.566l-2.307-3.845 3.448-3.448.006-.009A2.957 2.957 0 0 0 16 15a3 3 0 0 0 0-6 2.937 2.937 0 0 0-.481.049L11.781 4.375c-.026-.031-.062-.047-.09-.075A2.96 2.96 0 0 0 12 3 3 3 0 1 0 9 6a2.963 2.963 0 0 0 1.281-.3l3.468 4.335a2.926 2.926 0 0 0-.447 3.25l-.009.006L9.586 17H4a1 1 0 0 0-.857.485l-3 5a1 1 0 0 0 0 1.03zM7 40a1 1 0 1 1 1-1A1 1 0 0 1 7 40zM9 4a1 1 0 1 1 1-1A1 1 0 0 1 9 4zm8 8a1 1 0 1 1-1-1A1 1 0 0 1 17 12zm3.834 16l-2.4 4H13.566l-2.4-4 1.2-2 1.2-2h4.868zM4.566 19H9.434l2.4 4-1.2 2-1.2 2H4.566l-2.4-4zM58.62 34.08a1.155 1.155 0 0 0-.33.21A1.052 1.052 0 0 0 58 35a1 1 0 0 0 .08.38.9.9 0 0 0 .54.54A1 1 0 0 0 59 36a1.033 1.033 0 0 0 .71-.29 1.155 1.155 0 0 0 .21-.33A.838.838 0 0 0 60 35a1.052 1.052 0 0 0-.29-.71A1.017 1.017 0 0 0 58.62 34.08z"></path>
+</svg>

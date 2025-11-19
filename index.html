@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CienciaViva - Inicio</title>
+  <link rel="icon" type="image/svg" href="./src/assets/icon/hourglass.svg">
   <link rel="stylesheet" href="./src/styles/navbar.css" />
   <link rel="stylesheet" href="./src/styles/index.css" />
   <link rel="stylesheet" href="./src/styles/carrusel.css" />
@@ -12,14 +13,16 @@
   
 </head>
 <script src="./src/scripts/carrusel.js"></script>
+<script src="./src/scripts/navbar.js"></script>
 <body>
   <nav class="navbar">
     <div class="navbar-content">
       <div class="logo">
-        <img src="logo.png" alt="CienciaViva Logo" />
+        <img src="./src/assets/icon/microscope.svg" alt="CienciaViva Logo" />
         <span>CienciaViva</span>
       </div>
-      <ul class="nav-links">
+      <button class="hamburger" id="hamburger">☰</button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="./src/pages/cursos.html">Cursos</a></li>
         <li><a href="./src/pages/recursos.html">Recursos</a></li>
@@ -36,14 +39,14 @@
         Supera tus vacíos de aprendizaje con un programa diseñado para estudiantes y graduados 
         que necesitan reforzar sus bases en biología, química y ciencias naturales.
       </p>
-      <a href="#" class="btn-principal">Empieza tu ruta de aprendizaje</a>
+      <a href="./src/pages/cursos.html" class="btn-principal">Empieza tu ruta de aprendizaje</a>
     </div>
 
     <div class="iconos">
-      <img src="icon1.png" alt="icono laboratorio" />
-      <img src="icon2.png" alt="icono microscopio" />
-      <img src="icon3.png" alt="icono planta" />
-      <img src="icon4.png" alt="icono átomo" />
+      <img src="./src/assets/icon/burner.svg" alt="icono laboratorio" />
+      <img src="./src/assets/icon/microscope.svg" alt="icono microscopio" />
+      <img src="./src/assets/icon/botany.svg" alt="icono planta" />
+      <img src="./src/assets/icon/dna.svg" alt="icono átomo" />
     </div>
   </main>
   <section class="carrusel">
@@ -54,25 +57,25 @@
 
     <div class="carrusel-track">
       <div class="card">
-        <img src="bio.jpg" alt="Biología">
+        <img src="./src/assets/img/biologia.jpg" alt="Biología">
         <h3>Biología</h3>
         <p>Comprende la base de la vida, sus procesos y funciones vitales.</p>
       </div>
 
       <div class="card">
-        <img src="quimica.jpg" alt="Química">
+        <img src="./src/assets/img/quimica.webp" alt="Química">
         <h3>Química</h3>
         <p>Domina átomos, moléculas y reacciones que forman el mundo.</p>
       </div>
 
       <div class="card">
-        <img src="energia.jpg" alt="Energía">
+        <img src="./src/assets/img/energia.jpg" alt="Energía">
         <h3>Energía</h3>
         <p>Explora fuerzas, movimiento y fenómenos del entorno.</p>
       </div>
 
       <div class="card">
-        <img src="ambiente.jpg" alt="Medio ambiente">
+        <img src="./src/assets/img/ambiente.jpg" alt="Medio ambiente">
         <h3>Ambiente</h3>
         <p>Entiende los ecosistemas y cómo protegerlos.</p>
       </div>

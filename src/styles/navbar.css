@@ -27,7 +27,7 @@ html, body {
   display: flex;
   justify-content: flex-start; /* el contenido empieza a la izquierda */
   align-items: center;
-  background: linear-gradient(90deg,#818274, #a3ab78);
+  background: linear-gradient(180deg, #a3ab78,#818274);
   padding: 10px 0; /* padding vertical; el padding horizontal está en .navbar-content */
   position: fixed;
   width: 100%;
@@ -106,5 +106,40 @@ html, body {
   .nav-links {
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #10454f;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    z-index: 2000;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: linear-gradient(90deg,#818274, #a3ab78);
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .nav-links.show {
+    display: flex;
   }
 }

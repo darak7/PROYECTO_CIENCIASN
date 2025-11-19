@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" id="science">
+  <g transform="translate(0 -1004.362)">
+    <circle cx="24" cy="1028.362" r="24" fill="#ffa40b" fill-rule="evenodd"></circle>
+    <g transform="translate(448.328 -136.27)">
+      <path fill="#e9eded" stroke="#e9eded" stroke-linecap="square" d="M-412.845 1158.879v10.966a2.01 2.01 0 0 1-2 2.029c-1.108 0-2-.905-2-2.029V1158.88"></path>
+      <path fill="#25b39e" d="M-415.398 1165.167c-.56-.07-.948.21-.948.21v4.47c0 .858.664 1.527 1.5 1.527s1.5-.669 1.5-1.528v-4.468s-.577.5-1.443 0a1.617 1.617 0 0 0-.61-.211z"></path>
+      <path fill="none" stroke="#2b4255" d="M-429.328 1175.629h2"></path>
+      <path fill="none" stroke="#2b4255" stroke-linecap="round" stroke-linejoin="round" d="M-428.828 1176.129h1"></path>
+      <path fill="none" stroke="#2b4255" d="M-416.328 1175.629h2"></path>
+      <path fill="none" stroke="#2b4255" stroke-linecap="round" stroke-linejoin="round" d="M-415.828 1176.129h1"></path>
+      <path fill="#e9eded" stroke="#e9eded" stroke-linecap="square" d="M-420.828 1158.879v10.966a2.01 2.01 0 0 1-2 2.029c-1.108 0-2-.905-2-2.029V1158.88"></path>
+      <path fill="#f05542" d="M-423.383 1165.167a1.42 1.42 0 0 0-.945.209v4.47c0 .86.664 1.528 1.5 1.528.829 0 1.487-.658 1.498-1.506v-4.49s-.577.5-1.443 0a1.617 1.617 0 0 0-.61-.211z"></path>
+      <path fill="none" stroke="#e9eded" stroke-linecap="round" stroke-linejoin="round" d="M-425.821 1158.879h5.975m2.024 0h5.975"></path>
+      <circle cx="-435.329" cy="1154.379" r="1" fill="#78c8f0" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <circle cx="-430.828" cy="1150.879" r="1.5" fill="#78c8f0" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <circle cx="-418.828" cy="1150.129" r=".5" fill="#60c5b8" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <circle cx="-420.828" cy="1151.629" r=".5" fill="#60c5b8" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <circle cx="-420.828" cy="1153.629" r=".5" fill="#60c5b8" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <circle cx="-416.828" cy="1151.629" r=".5" fill="#60c5b8" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <circle cx="-416.828" cy="1153.629" r=".5" fill="#60c5b8" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <circle cx="-418.828" cy="1155.129" r=".5" fill="#60c5b8" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <path fill="none" stroke="#2b4255" stroke-linecap="round" stroke-linejoin="round" d="M-433.328 1175.129h21c.83 0 1.5-.67 1.5-1.5v-11c0-.831-.67-1.5-1.5-1.5h-19" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></path>
+      <path fill="#e9eded" stroke="#e9eded" stroke-linecap="square" d="M-431.83 1159.212v3.835c0 .295.338.341.556.4a6.51 6.51 0 0 1 4.361 7.22 6.503 6.503 0 0 1-6.42 5.465 6.501 6.501 0 0 1-6.414-5.474 6.51 6.51 0 0 1 4.371-7.215c.238-.083.6-.166.547-.396v-3.835"></path>
+      <path fill="#4bbfeb" d="M-433.33 1169.38c3-.805 4 .803 7 0 0 3.877-3.121 7-7 7-3.877 0-7-3.123-7-7 3 1 4 1 7 0z" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></path>
+      <path fill="none" stroke="#e9eded" stroke-linecap="round" stroke-linejoin="round" d="M-435.807 1158.88h4.957"></path>
+      <circle cx="-432.829" cy="1164.879" r=".5" fill="#78c8f0" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <circle cx="-435.079" cy="1167.129" r=".75" fill="#78c8f0" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></circle>
+      <path fill="none" stroke="#e9eded" stroke-linecap="square" d="M-431.83 1159.711v3.336c0 .295.338.341.556.4a6.51 6.51 0 0 1 4.361 7.22 6.503 6.503 0 0 1-6.42 5.465 6.501 6.501 0 0 1-6.414-5.474 6.51 6.51 0 0 1 4.371-7.215c.238-.083.6-.166.547-.396v-3.336"></path>
+    </g>
+  </g>
+</svg>

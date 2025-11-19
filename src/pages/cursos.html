@@ -4,19 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CienciaViva - Cursos</title>
+  <link rel="icon" type="image/svg" href="../assets/icon/hourglass.svg">
   <link rel="stylesheet" href="../styles/navbar.css" />
   <link rel="stylesheet" href="../styles/cursos.css"  />
   <link rel="stylesheet" href="../styles/footer.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
+<script src="../scripts/navbar.js"></script>
 <body>
   <nav class="navbar">
     <div class="navbar-content">
       <div class="logo">
-        <img src="logo.png" alt="CienciaViva Logo" />
+        <img src="../assets/icon/microscope.svg" alt="CienciaViva Logo" />
         <span>CienciaViva</span>
       </div>
-      <ul class="nav-links">
+      <button class="hamburger" id="hamburger">☰</button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="../../index.html" >Inicio</a></li>
         <li><a href="cursos.html" class="active">Cursos</a></li>
         <li><a href="recursos.html">Recursos</a></li>
@@ -34,7 +37,7 @@
 
     <section class="modulos">
       <div class="modulo">
-        <img src="icon-bio.png" alt="Biología" />
+        <img src="../assets/icon/tubes.svg" alt="Biología" />
         <h3>Fundamentos de Biología</h3>
         <p>
           Desde la célula hasta los ecosistemas. Aprende los conceptos esenciales de la vida con explicaciones claras y ejemplos cotidianos.
@@ -42,7 +45,7 @@
       </div>
 
       <div class="modulo">
-        <img src="icon-quimica.png" alt="Química" />
+        <img src="../assets/icon/beaker.svg" alt="Química" />
         <h3>Química Práctica y Aplicada</h3>
         <p>
           Comprende reacciones, enlaces y equilibrios químicos con ejercicios prácticos que conectan la teoría con el mundo real.
@@ -50,7 +53,7 @@
       </div>
 
       <div class="modulo">
-        <img src="icon-ciencias.png" alt="Ciencias Naturales" />
+        <img src="../assets/icon/cell.svg" alt="Ciencias Naturales" />
         <h3>Ciencias Naturales para la Vida</h3>
         <p>
           Explora física, astronomía y geología de forma integrada para entender cómo funciona nuestro planeta y el universo.
@@ -58,7 +61,7 @@
       </div>
 
       <div class="modulo">
-        <img src="icon-lab.png" alt="Laboratorios Virtuales" />
+        <img src="../assets/icon/hourglass.svg" alt="Laboratorios Virtuales" />
         <h3>Laboratorios Virtuales</h3>
         <p>
           Experimenta y practica con simuladores interactivos que recrean laboratorios reales sin necesidad de equipamiento físico.

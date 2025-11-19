@@ -1,17 +1,19 @@
-/* Página de Contacto */
+/* Página de Recursos */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #edeae8;
+  margin: 0;
+  padding: 0;
+  background-color: #10454f;
   color: #506266;
-  
 }
+
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  overflow-x: hidden; /* elimina scroll lateral */
+  overflow-x: hidden; /* elimina scroll lateral */ 
   background-color: #10454f;
 }
 
@@ -21,15 +23,14 @@ html, body {
   box-sizing: inherit;
 }
 
-.contacto {
+.recursos {
   width: 100%;          
   min-height: 100vh;
   margin: 0;
   padding: 160px 0 80px;
   text-align: center;
-  background: #edeae8;
-  /*
-  background: linear-gradient(
+  background:#edeae8;
+  /*background: linear-gradient(
     180deg,
     #10454f 0%,
     #506266 35%,
@@ -40,105 +41,105 @@ html, body {
   color: #10454f;
   box-sizing: border-box;
 }
-
-/* --- Testimonios --- */
-.testimonios {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.testimonios h1 {
+.recursos-header h1 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #10454f;
   margin-bottom: 10px;
 }
 
-.testimonios p {
+.recursos-header p {
   color: #10454f;
   font-size: 1rem;
   margin-bottom: 50px;
 }
 
-.cards-testimonios {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 0 40px;
-}
-
-.card-testimonio {
+.recursos-info {
   background-color: #506266;
-  border-radius: 12px;
-  max-width: 320px;
-  padding: 30px 20px;
-  color: #edeae8;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: left;
-  transition: transform 0.3s ease, background 0.3s ease;
+  border-radius: 18px;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 40px 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.card-testimonio:hover {
-  transform: translateY(-5px);
+.recursos-info p {
+  line-height: 1.7;
+  color: #edeae8;
+  margin-bottom: 40px;
+}
+
+.recursos-beneficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.beneficio {
   background-color: #818274;
-}
-
-.card-testimonio p {
-  font-style: italic;
-  margin-bottom: 20px;
-  color: #edeae8;
-}
-
-.autor {
+  border-radius: 12px;
+  padding: 12px 16px;
   display: flex;
   align-items: center;
   gap: 10px;
+  color: #edeae8;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.avatar {
+.beneficio:hover {
   background-color: #a3ab78;
+  transform: translateY(-4px);
+}
+
+.check {
+  background-color: #bde038;
   color: #10454f;
-  font-weight: bold;
-  font-size: 0.9rem;
   border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5px 9px;
+  font-weight: bold;
 }
 
-.autor h4 {
+.beneficio p {
   margin: 0;
-  font-weight: 600;
-  color: #bde038;
-}
-
-.autor span {
-  font-size: 0.85rem;
+  font-weight: 500;
   color: #edeae8;
 }
 
-/* --- Formulario de Contacto --- */
-.formulario-contacto {
+/* Responsividad Recursos */
+@media (max-width: 768px) {
+  .recursos-info {
+    padding: 25px 20px;
+  }
+
+  .recursos-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .beneficio {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* --- Formulario de inscripción --- */
+.formulario-inscripcion {
   text-align: center;
   padding: 80px 20px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
-.formulario-contacto h2 {
+.formulario-inscripcion h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #10454f;
   margin-bottom: 10px;
 }
 
-.formulario-contacto p {
+.formulario-inscripcion p {
   color: #10454f;
   margin-bottom: 40px;
   font-size: 1rem;
@@ -165,8 +166,10 @@ html, body {
   font-size: 1rem;
 }
 
+/* === INPUTS, TEXTAREAS Y SELECT — ESTILO UNIFICADO === */
 .formulario input,
-.formulario textarea {
+.formulario textarea,
+.formulario select {
   width: 100%;
   background-color: #506266;
   border: none;
@@ -176,11 +179,22 @@ html, body {
   font-size: 1rem;
   margin-bottom: 16px;
   box-sizing: border-box;
+  appearance: none; /* elimina la flecha nativa para aplicar estilo */
 }
 
+/* Placeholder */
 .formulario input::placeholder,
-.formulario textarea::placeholder {
+.formulario textarea::placeholder,
+.formulario select option[disabled] {
   color: #c7c7c7;
+}
+
+/* select: agrega flecha personalizada */
+.formulario select {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='%23edeae8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  cursor: pointer;
 }
 
 .formulario textarea {
@@ -188,6 +202,7 @@ html, body {
   height: 120px;
 }
 
+/* Botón */
 .formulario button {
   width: 100%;
   background-color: #bde038;
@@ -206,13 +221,14 @@ html, body {
   transform: translateY(-2px);
 }
 
-/* Responsividad Contacto */
+/* Responsividad */
 @media (max-width: 768px) {
   .formulario {
     padding: 30px 25px;
   }
 
-  .formulario-contacto h2 {
+  .formulario-inscripcion h2 {
     font-size: 1.8rem;
   }
 }
+
