@@ -12,7 +12,7 @@ body {
   margin-top: 0;
   text-align: center;
   margin-bottom: 0;
-  background:#edeae8
+  background:transparent
   /*background: linear-gradient(
     180deg,
     #a3ab78 0%,
@@ -105,6 +105,16 @@ body {
 
 .next {
   right: 0;
+}
+/* Canvas de fondo con partículas */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;          /* por detrás de todo */
+  pointer-events: none; /* no bloquea clics ni scroll */
 }
 
 /* ====== RESPONSIVE ====== */
