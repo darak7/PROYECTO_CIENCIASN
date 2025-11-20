@@ -3,7 +3,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #edeae8;
+  background-color: transparent;
   color: #506266;
 }
 
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 120px 0 10px; /* ⬅ Reducimos padding inferior (antes 40px o más) */
   text-align: center;
-  background:#edeae8;
+  background:transparent;
   /*
   background: linear-gradient(
     180deg,
@@ -87,6 +87,17 @@ body {
   transform: scale(1.1);
 }
 
+/* Canvas de fondo con partículas */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;          /* por detrás de todo */
+  pointer-events: none; /* no bloquea clics ni scroll */
+} 
+
 /* Responsividad */
 @media (max-width: 768px) {
   .nav-links {
@@ -109,3 +120,4 @@ body {
     padding: 130px 0 60px;
   }
 }
+

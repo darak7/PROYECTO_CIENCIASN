@@ -1,6 +1,6 @@
 # Proyecto CienciasN 🌱
 
-Sitio educativo desarrollado con HTML y CSS modular.
+Sitio educativo desarrollado con HTML, CSS y Java modular.
 
 ## Estructura
 PROYECTO_CIENCIASN/
