@@ -11,7 +11,7 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 120px 20px 60px;
-    background: #10454f;
+    background: #edeae8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@ body {
 /* Título grande */
 .pagina-biologia h1 {
     font-size: 2.5rem;
-    color: #bde038;
+    color: #10454f;
     margin-bottom: 30px;
 }
 
@@ -29,7 +29,7 @@ body {
 .modulo {
     width: 100%;
     max-width: 900px;
-    background: #506266;
+    background: #818274;
     border-radius: 16px;
     padding: 30px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
