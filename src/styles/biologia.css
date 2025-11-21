@@ -1,0 +1,81 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #10454f;
+    color: #edeae8;
+}
+
+/* Contenedor principal */
+.pagina-biologia {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 20px 60px;
+    background: #10454f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Título grande */
+.pagina-biologia h1 {
+    font-size: 2.5rem;
+    color: #bde038;
+    margin-bottom: 30px;
+}
+
+/* Contenedor del módulo */
+.modulo {
+    width: 100%;
+    max-width: 900px;
+    background: #506266;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Botón */
+.btn-desplegar {
+    margin-top: 15px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #bde038;
+    color: #10454f;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-desplegar:hover {
+    background: #d4f15e;
+}
+
+/* Contenido desplegable */
+.contenido-modulo {
+    margin-top: 20px;
+    display: none;
+    text-align: left;
+}
+
+.modulo.activo .contenido-modulo {
+    display: block;
+}
+
+/* Imagen */
+.contenido-modulo img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+}
+
+/* Texto */
+.contenido-modulo p {
+    line-height: 1.7;
+    color: #edeae8;
+    font-size: 1.1rem;
+}
