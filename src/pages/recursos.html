@@ -8,11 +8,13 @@
   <link rel="icon" type="image/svg" href="../assets/icon/hourglass.svg">
   <link rel="stylesheet" href="../styles/navbar.css" />
   <link rel="stylesheet" href="../styles/conversor.css" />
+  <link rel="stylesheet" href="../styles/juegos.css">
   <link rel="stylesheet" href="../styles/footer.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <script src="../scripts/navbar.js" defer></script>
   <script src="../scripts/conversor.js" defer></script>
+  <script src="../scripts/juegos.js"></script>
 </head>
 
 <body>
@@ -70,9 +72,152 @@
         <div class="resultado" id="resultado">
           Resultado aquí...
         </div>
-
       </div>
     </section>
+
+    <section>
+      <div class="container">
+        <!-- ACTIVIDAD 1 -->
+        <div class="actividad" id="act1">
+          <h2>Completar Palabras Faltantes</h2>
+          <p class="small">Instrucciones: Completa las palabras que faltan en las siguientes frases sobre macromoléculas.</p>
+
+          <div class="preguntas">
+            <div class="pregunta">
+              1. Los <input type="text" id="a1" /> son polímeros formados por nucleótidos y contienen la información genética. 
+              <span class="small respuesta-correcta">Respuesta: nucleicos</span>
+              <span class="status" id="s1"></span>
+            </div>
+            <div class="pregunta">
+              2. Los <input type="text" id="a2" /> están formados por aminoácidos y cumplen funciones estructurales y enzimáticas. 
+              <span class="small respuesta-correcta">Respuesta: proteínas</span>
+              <span class="status" id="s2"></span>
+            </div>
+            <div class="pregunta">
+              3. Los <input type="text" id="a3" /> son la principal fuente de energía inmediata del cuerpo. 
+              <span class="small respuesta-correcta">Respuesta: carbohidratos</span>
+              <span class="status" id="s3"></span>
+            </div>
+            <div class="pregunta">
+              4. Los <input type="text" id="a4" /> son moléculas hidrofóbicas importantes en la formación de membranas. 
+              <span class="small respuesta-correcta">Respuesta: lípidos</span>
+              <span class="status" id="s4"></span>
+            </div>
+            <div class="pregunta">
+              5. El ADN está formado por una doble hélice de <input type="text" id="a5" />. 
+              <span class="small respuesta-correcta">Respuesta: nucleótidos</span>
+              <span class="status" id="s5"></span>
+            </div>
+          </div>
+          <div style="margin-top:10px"><button onclick="checkAct1()" class="button">Comprobar Actividad 1</button></div>
+        </div>
+
+        <!-- ACTIVIDAD 2 -->
+        <div class="actividad" id="act2">
+          <h2>Actividad: Relaciona cada término con su concepto</h2>
+          <p class="small">CONCEPTOS (A–J)</p>
+    <ol class="small">
+      <li>A. Sacos membranosos donde se encuentra la clorofila; allí ocurren las reacciones luminosas.</li>
+      <li>B. Proceso metabólico donde la energía lumínica se transforma en energía química.</li>
+      <li>C. Ruptura de la molécula de agua para liberar oxígeno, electrones e hidrógenos.</li>
+      <li>D. Espacio interno del cloroplasto donde ocurre el Ciclo de Calvin.</li>
+      <li>E. Reacciones que requieren luz y producen ATP, NADPH y oxígeno.</li>
+      <li>F. Reacciones que no requieren luz directa; se fija el CO₂ para formar glucosa.</li>
+      <li>G. Molécula energética de uso inmediato producida en la fase luminosa.</li>
+      <li>H. Transportador de electrones y poder reductor producido en la fase luminosa.</li>
+      <li>I. Pérdida de electrones por parte de la clorofila al recibir luz.</li>
+      <li>J. Organelo especializado en la fotosíntesis en células vegetales.</li>
+    </ol>
+          <div class="actividad2-grid">
+            <ul class="col-terminos">
+              <li>1. Fotosíntesis</li>
+              <li>2. Cloroplasto</li>
+              <li>3. Tilacoides</li>
+              <li>4. Estroma</li>
+              <li>5. Fase luminosa</li>
+              <li>6. Fase oscura (Ciclo de Calvin)</li>
+              <li>7. ATP</li>
+              <li>8. NADPH</li>
+              <li>9. Fotooxidación de la clorofila</li>
+              <li>10. Fotólisis del agua</li>
+            </ul>
+            <ul class="col-respuestas">
+              <li>1 → 
+                <select id="m1">
+                  <option value="">--Seleccione--</option>
+                  <option value="A">A</option><option value="B">B</option>
+                  <option value="C">C</option><option value="D">D</option>
+                  <option value="E">E</option><option value="F">F</option>
+                  <option value="G">G</option><option value="H">H</option>
+                  <option value="I">I</option><option value="J">J</option>
+                </select>
+                <span class="status" id="ms1"></span>
+                <span class="small respuesta-correcta">Respuesta: B</span>
+              </li>
+              <li>2 → 
+                <select id="m2">
+                  <option value="">--Seleccione--</option>
+                  <option value="A">A</option><option value="B">B</option>
+                  <option value="C">C</option><option value="D">D</option>
+                  <option value="E">E</option><option value="F">F</option>
+                  <option value="G">G</option><option value="H">H</option>
+                  <option value="I">I</option><option value="J">J</option>
+                </select>
+                <span class="status" id="ms2"></span>
+                <span class="small respuesta-correcta">Respuesta: J</span>
+              </li>
+              <li>3 → 
+                <select id="m3">...</select>
+                <span class="status" id="ms3"></span>
+                <span class="small respuesta-correcta">Respuesta: A</span>
+              </li>
+              <li>4 → 
+                <select id="m4">...</select>
+                <span class="status" id="ms4"></span>
+                <span class="small respuesta-correcta">Respuesta: D</span>
+              </li>
+              <li>5 → 
+                <select id="m5">...</select>
+                <span class="status" id="ms5"></span>
+                <span class="small respuesta-correcta">Respuesta: E</span>
+              </li>
+              <li>6 → 
+                <select id="m6">...</select>
+                <span class="status" id="ms6"></span>
+                <span class="small respuesta-correcta">Respuesta: F</span>
+              </li>
+              <li>7 → 
+                <select id="m7">...</select>
+                <span class="status" id="ms7"></span>
+                <span class="small respuesta-correcta">Respuesta: G</span>
+              </li>
+              <li>8 → 
+                <select id="m8">...</select>
+                <span class="status" id="ms8"></span>
+                <span class="small respuesta-correcta">Respuesta: H</span>
+              </li>
+              <li>9 → 
+                <select id="m9">...</select>
+                <span class="status" id="ms9"></span>
+                <span class="small respuesta-correcta">Respuesta: I</span>
+              </li>
+              <li>10 → 
+                <select id="m10">...</select>
+                <span class="status" id="ms10"></span>
+                <span class="small respuesta-correcta">Respuesta: C</span>
+              </li>
+            </ul>
+          </div>
+          <div style="margin-top:10px"><button onclick="checkAct2()" class="button">Comprobar Actividad 2</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- overlay felicitaciones -->
+    <div id="overlay" class="overlay hidden" onclick="hideOverlay()">
+      <div class="card" id="overlayCard">¡FELICITACIONES!</div>
+    </div>
+
   </main>
 
   <!-- FOOTER -->
