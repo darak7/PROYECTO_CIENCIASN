@@ -125,3 +125,16 @@ html, body {
 .modulo.activo .contenido-modulo {
     display: block;
 }
+
+/* Quitar subrayado del enlace que envuelve todo el módulo */
+.enlace-modulo {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;       /* importante para que siga siendo un bloque clickeable */
+}
+
+/* Evitar subrayado en hover */
+.enlace-modulo:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
