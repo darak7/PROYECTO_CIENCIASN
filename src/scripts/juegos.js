@@ -43,7 +43,7 @@ function playSuccessSound() {
 }
 
 // ========== ACTIVIDAD 1 ==========
-const answers1 = ["nucleicos", "proteinas", "carbohidratos", "lipidos", "nucleotidos"];
+const answers1 = ["acidos nucleicos", "proteinas", "carbohidratos", "lipidos", "nucleotidos"];
 
 function checkAct1() {
   const inputs = [a1, a2, a3, a4, a5];
