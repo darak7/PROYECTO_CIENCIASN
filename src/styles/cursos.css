@@ -2,12 +2,16 @@
 body {
   font-family: "Poppins", sans-serif;
   padding: 40px 0 0px;  /* balance perfecto */
-  
-  text-align: center;
 
   margin-bottom: 0;
   background-color: #10454f;
   color: #506266;
+}
+
+.cursos,
+.cursos-header,
+.modulos {
+  text-align: center;
 }
 
 html, body {
