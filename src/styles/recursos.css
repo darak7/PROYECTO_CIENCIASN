@@ -1,0 +1,271 @@
+/* ======================================================
+   VARIABLES DE COLOR (PALETA OFICIAL CIENCIAVIVA)
+   ====================================================== */
+:root {
+  --c1: #10454F; /* oscuro principal */
+  --c2: #edeae8; /* gris azulado claro */
+  --c3: #BDE038; /* verde lima */
+  --c4: #DBE039; /* amarillo verdoso */
+  --c5: #A3AB78; /* verde pálido */
+  --c6: #818274; /* gris cálido */
+  --card: #10454F; /* gris azulado oscuro */
+  --bg: #edeae8;   /* fondo principal claro */
+}
+
+/* ======================================================
+   CONTENEDOR PRINCIPAL DE LA PÁGINA
+   ====================================================== */
+.conversor-main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 140px 20px 80px;
+  background: var(--bg);
+  color: var(--c1);
+}
+
+/* ======================================================
+   CALCULADORA
+   ====================================================== */
+.conversor {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.conversor h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--c1);
+}
+
+.conversor p {
+  color: var(--c1);
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.conversor-box {
+  background: var(--card);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: left;
+  color: var(--c2);
+}
+
+.conversor-box label {
+  font-weight: 600;
+  color: var(--c2);
+}
+
+.conversor-box input,
+.conversor-box select {
+  width: 100%;
+  margin: 8px 0 22px;
+  padding: 12px;
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--c2);
+  border: 1px solid var(--c6);
+  font-size: 1rem;
+}
+
+.conversor-box input::placeholder {
+  color: #c7c7c7;
+}
+
+.unidades-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#btn-convertir {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--c3);
+  color: var(--c1);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn-convertir:hover {
+  background-color: var(--c5);
+}
+
+.resultado {
+  margin-top: 25px;
+  padding: 15px;
+  background: var(--c5);
+  border-left: 4px solid var(--c1);
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--c1);
+}
+
+/* ======================================================
+   CONTENEDOR DE ACTIVIDADES — AJUSTE DE PROPORCIÓN
+   ====================================================== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.actividad {
+  background-color: var(--card);
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  padding: 28px;
+  margin-bottom: 35px;
+  color: var(--c2);
+}
+
+.actividad h2 {
+  margin-bottom: 10px;
+  color: var(--c2);
+}
+
+.small {
+  color: var(--c6);
+  font-size: 0.85rem;
+}
+
+
+/* COLUMNAS ACTIVIDAD 2 */
+.actividad2-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin-top: 15px;
+  align-items: start;
+}
+
+
+.col-respuestas li,
+.col-terminos li {
+  margin-bottom: 10px;
+  color: var(--c2);
+  font-weight: 500;
+}
+
+.col-respuestas select {
+  width: 130px;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: var(--card);
+  color: var(--c2);
+  border: 2px solid var(--c6);
+  transition: 0.2s;
+}
+
+.col-respuestas select:hover {
+  border-color: var(--c3);
+  box-shadow: 0 0 5px var(--c3);
+}
+
+/* ESTADO RESPUESTAS */
+.ok {
+  color: var(--c3);
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.error {
+  color: #ef4444;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+/* BOTONES */
+.button {
+  background-color: var(--c3);
+  color: var(--c1);
+  font-weight: 600;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+  background-color: var(--c4);
+  transform: scale(1.05);
+}
+
+/* ======================================================
+   OVERLAY — FELICITACIONES
+   ====================================================== */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.card {
+  background: var(--card);
+  padding: 40px 70px;
+  border-radius: 16px;
+  font-size: 26px;
+  color: var(--c2);
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  animation: bounce 1s infinite alternate;
+  border: 3px solid var(--c3);
+}
+
+/* ANIMACIÓN */
+@keyframes bounce {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+/* CONFETI */
+.confetti {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+.half-br {
+  display: block;
+  height: 0.5rem;
+}
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+@media (max-width: 768px) {
+  .unidades-row {
+    grid-template-columns: 1fr;
+  }
+
+  .conversor-box {
+    padding: 25px;
+  }
+
+  .actividad2-grid {
+    grid-template-columns: 1fr;
+  }
+}

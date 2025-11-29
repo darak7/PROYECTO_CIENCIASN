@@ -58,7 +58,7 @@ function checkAct1() {
       s.textContent = "✔";
       s.className = "ok";
     } else {
-      s.textContent = "✖ Respuesta incorrecta";
+      s.textContent = "✖";
       s.className = "error";
       all = false;
     }
@@ -89,7 +89,7 @@ function checkAct2() {
       s.textContent = "✔";
       s.className = "ok";
     } else {
-      s.textContent = "✖ Respuesta incorrecta";
+      s.textContent = "✖";
       s.className = "error";
       all = false;
     }

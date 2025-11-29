@@ -1,27 +1,15 @@
 /* ====== CARRUSEL GENERAL ====== */
 body {
   font-family: "Poppins", sans-serif;
-  padding: 0px 0 0px;  /* balance perfecto */
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 0px;
+  margin: 0;
 }
+
 .carrusel {
-  font-family: "Poppins", sans-serif;
-  padding: 30px 0 40px;   
-  margin-top: 0;
+  padding: 30px 0 40px;
   text-align: center;
-  margin-bottom: 0;
-  background:transparent;
-  /*background: linear-gradient(
-    180deg,
-    #a3ab78 0%,
-    #c5c7c4 40%,
-    #dadbd9 70%,
-    #edeae8 100%
-
-  );*/
+  background: transparent;
 }
-
 
 .carrusel h2 {
   font-size: 2rem;
@@ -35,7 +23,16 @@ body {
   position: relative;
   max-width: 1100px;
   margin: 0 auto;
-  overflow: hidden;
+  /* ❗ELIMINADO overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== VENTANA (NUEVO OBLIGATORIO) ====== */
+.carrusel-window {
+  width: 100%;
+  overflow: hidden; /* 🔥 La ventana correcta del carrusel */
 }
 
 /* ====== TRACK ====== */
@@ -54,7 +51,7 @@ body {
   padding-bottom: 20px;
   text-align: center;
   color: #506266;
-  flex-shrink: 0; /* evita deformaciones */
+  flex-shrink: 0;
 }
 
 .card img {
@@ -98,32 +95,47 @@ body {
   background-color: #506266;
 }
 
-.prev {
-  left: 0;
-}
+.prev { left: 0; }
+.next { right: 0; }
 
-.next {
-  right: 0;
-}
-/* Canvas de fondo con partículas */
-#bg-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;          /* por detrás de todo */
-  pointer-events: none; /* no bloquea clics ni scroll */
-}
+/* ====== RESPONSIVE PARA 400PX ====== */
+@media (max-width: 480px) {
 
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-  .card {
-    min-width: 85%;
-    max-width: 85%;
+  /* Ajustar contenedor */
+  .carrusel-container {
+    padding: 0 5px;
   }
 
+  /* Ventana del carrusel */
+  .carrusel-window {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Tarjeta optimizada */
+  .card {
+    min-width: 88%;      /* Más ancho para móviles */
+    max-width: 88%;
+    margin: 0 6%;        /* Centrado natural */
+    border-radius: 18px;
+  }
+
+  .card img {
+    height: 160px;       /* Ajuste visual para pantallas 400x853 */
+    border-radius: 18px 18px 0 0;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  /* Ocultar botones en móvil */
   .carrusel-btn {
-    display: none;
+    display: none !important;
   }
 }
