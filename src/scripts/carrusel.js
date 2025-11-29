@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let index = 1;
   let cardWidth;
-  
-  // 1) Clonar elementos (infinite loop)
+
+  // ========= 1) CLONAR ELEMENTOS PARA LOOP INFINITO =========
   const firstClone = originalCards[0].cloneNode(true);
   const lastClone = originalCards[originalCards.length - 1].cloneNode(true);
 
@@ -19,10 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const allCards = document.querySelectorAll(".card");
 
-  // 2) Calcular ancho REAL después de que carguen las imágenes
+  // ========= 2) OBTENER ANCHO REAL DE UNA TARJETA =========
   function computeCardWidth() {
     const style = window.getComputedStyle(allCards[0]);
-    const margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+    const margin =
+      parseFloat(style.marginLeft) + parseFloat(style.marginRight);
     return allCards[0].offsetWidth + margin;
   }
 
@@ -32,14 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
     track.style.transform = `translateX(${-cardWidth * index}px)`;
   }
 
-  // 3) Movimiento del carrusel
+  // ========= 3) MOVIMIENTO DEL CARRUSEL =========
   function move(direction) {
     index += direction;
     track.style.transition = "transform 0.4s ease-in-out";
     track.style.transform = `translateX(${-cardWidth * index}px)`;
   }
 
-  // 4) Corrección del salto infinito
+  // ========= 4) AJUSTE AUTOMÁTICO CUANDO SE ENTRA A UN CLON =========
   track.addEventListener("transitionend", () => {
     if (allCards[index].classList.contains("clone")) {
       track.style.transition = "none";
@@ -54,15 +55,47 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Botones
+  // ========= 5) BOTONES =========
   nextBtn.addEventListener("click", () => move(1));
   prevBtn.addEventListener("click", () => move(-1));
 
-  // Recalcular al redimensionar
+  // ========= 6) AJUSTAR AL RE-DIMENSIONAR =========
   window.addEventListener("resize", setInitialPosition);
 
-  // ESPERAR A QUE CARGUE TODO (IMÁGENES + DOM)
+  // ========= 7) ESPERAR A QUE CARGUEN IMÁGENES =========
   window.addEventListener("load", () => {
-    setTimeout(setInitialPosition, 100);
+    setTimeout(setInitialPosition, 120);
+  });
+
+  // ========= 8) SOPORTE TÁCTIL PARA MÓVILES (SWIPE) =========
+  let startX = 0;
+  let isDragging = false;
+
+  track.addEventListener("touchstart", (e) => {
+    isDragging = true;
+    startX = e.touches[0].clientX;
+  });
+
+  track.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+
+    const currentX = e.touches[0].clientX;
+    const diff = startX - currentX;
+
+    // Desliza a la izquierda
+    if (diff > 45) {
+      move(1);
+      isDragging = false;
+    }
+
+    // Desliza a la derecha
+    if (diff < -45) {
+      move(-1);
+      isDragging = false;
+    }
+  });
+
+  track.addEventListener("touchend", () => {
+    isDragging = false;
   });
 });
