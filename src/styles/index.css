@@ -39,8 +39,12 @@ body {
 
 
 .inicio-content h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #10454f, #bde038);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
   color: #10454f;
 }
@@ -78,13 +82,13 @@ body {
 
 
 .iconos img {
-  width: 60px;
+  width: 100px;
   height: auto;
   transition: transform 0.3s ease;
 }
 
 .iconos img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /* Canvas de fondo con partículas */
