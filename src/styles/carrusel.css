@@ -74,14 +74,6 @@ body {
   line-height: 1.5;
   color: #506266;
 }
-.card-link {
-  text-decoration: none;  
-  color: inherit;          
-}
-.card-link h3,
-.card-link p {
-  text-decoration: none !important;
-}
 
 
 /* ====== BOTONES ====== */
